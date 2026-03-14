@@ -13,7 +13,7 @@ export const requestRsvp = async (email: string, url: string) => {
     console.log(`[STEP] Webhook URL for ${email}: ${url}`);
 
     await resend.emails.send({
-      from: 'Workflow DevKit Birthday Demo <birthday-card-generator@resend.pranay.gp>',
+      from: process.env.RESEND_FROM_EMAIL || 'Workflow DevKit Birthday Demo <birthday-card-generator@platformatic.dev>',
       to: email,
       subject: "You're Invited to a Birthday Party!",
       html: generateRsvpEmailTemplate(email, url),

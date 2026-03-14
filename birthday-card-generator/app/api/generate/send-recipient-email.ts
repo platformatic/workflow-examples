@@ -14,8 +14,6 @@ type RecipientEmailParams = {
   rsvpReplies: RsvpReply[];
 };
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export const sendRecipientEmail = async ({
   recipientEmail,
   cardImage,
@@ -23,6 +21,11 @@ export const sendRecipientEmail = async ({
   rsvpReplies,
 }: RecipientEmailParams) => {
   'use step';
+
+  // Instantiate inside the step, not at module scope — Resend's constructor
+  // throws if the API key is missing, and Next.js imports this module at
+  // build time (for page data collection) when no env vars are set.
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
     console.log(`[STEP] Sending birthday card to recipient: ${recipientEmail}`);
@@ -39,7 +42,7 @@ export const sendRecipientEmail = async ({
     const mimeType = cardImage.match(/data:([^;]+);/)?.[1] || 'image/png';
 
     await resend.emails.send({
-      from: 'Workflow DevKit Birthday Demo <birthday-card-generator@resend.pranay.gp>',
+      from: process.env.RESEND_FROM_EMAIL || 'Workflow DevKit Birthday Demo <birthday-card-generator@platformatic.dev>',
       to: recipientEmail,
       subject: 'Happy Birthday!',
       headers: {

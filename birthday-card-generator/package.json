@@ -9,7 +9,11 @@
     "format": "npx ultracite@latest format"
   },
   "dependencies": {
+    "@ai-sdk/gateway": "^2.0.58",
     "@hookform/resolvers": "^5.2.2",
+    "@platformatic/next": "^3.38.0",
+    "@platformatic/runtime": "^3.38.0",
+    "@platformatic/world": "^0.2.0",
     "@react-email/render": "^1.4.0",
     "@vercel/analytics": "^1.5.0",
     "ai": "^5.0.68",
@@ -34,6 +38,7 @@
     "tailwind-merge": "^3.3.1",
     "uuid": "^13.0.0",
     "vaul": "^1.1.2",
+    "wattpm": "^3.38.0",
     "workflow": "4.2.0-beta.67",
     "zod": "^4.1.12"
   },
