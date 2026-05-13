@@ -9,8 +9,7 @@ WORKDIR $APP_HOME
 
 COPY ./ ./
 
-# Temporary: we need for private modules
-RUN --mount=type=secret,id=npmrc,target=/root/.npmrc pnpm install
+RUN pnpm install
 
 EXPOSE 3042
 EXPOSE 9090
