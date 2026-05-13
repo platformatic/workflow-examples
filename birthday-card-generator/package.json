@@ -13,7 +13,7 @@
     "@hookform/resolvers": "^5.2.2",
     "@platformatic/next": "^3.38.0",
     "@platformatic/runtime": "^3.38.0",
-    "@platformatic/world": "^0.2.0",
+    "@platformatic/world": "^0.7.0",
     "@react-email/render": "^1.4.0",
     "@vercel/analytics": "^1.5.0",
     "ai": "^5.0.68",
@@ -39,7 +39,7 @@
     "uuid": "^13.0.0",
     "vaul": "^1.1.2",
     "wattpm": "^3.38.0",
-    "workflow": "4.2.0-beta.67",
+    "workflow": "^4.2.4",
     "zod": "^4.1.12"
   },
   "devDependencies": {
@@ -51,5 +51,16 @@
     "tailwindcss": "^4",
     "tw-animate-css": "^1.4.0",
     "typescript": "^5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@nestjs/core",
+      "@swc/core",
+      "cbor-extract",
+      "esbuild",
+      "msgpackr-extract",
+      "protobufjs",
+      "sharp"
+    ]
   }
 }
