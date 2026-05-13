@@ -21,8 +21,8 @@ importers:
         specifier: ^3.38.0
         version: 3.41.0
       '@platformatic/world':
-        specifier: ^0.7.0
-        version: 0.7.0
+        specifier: ^0.7.1
+        version: 0.7.1
       '@react-email/render':
         specifier: ^1.4.0
         version: 1.4.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -294,8 +294,18 @@ packages:
     cpu: [arm64]
     os: [darwin]
 
+  '@cbor-extract/cbor-extract-darwin-arm64@2.2.2':
+    resolution: {integrity: sha512-ZKZ/F8US7JR92J4DMct6cLW/Y66o2K576+zjlEN/MevH70bFIsB10wkZEQPLzl2oNh2SMGy55xpJ9JoBRl5DOA==}
+    cpu: [arm64]
+    os: [darwin]
+
   '@cbor-extract/cbor-extract-darwin-x64@2.2.0':
     resolution: {integrity: sha512-1liF6fgowph0JxBbYnAS7ZlqNYLf000Qnj4KjqPNW4GViKrEql2MgZnAsExhY9LSy8dnvA4C0qHEBgPrll0z0w==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@cbor-extract/cbor-extract-darwin-x64@2.2.2':
+    resolution: {integrity: sha512-32b1mgc+P61Js+KW9VZv/c+xRw5EfmOcPx990JbCBSkYJFY0l25VinvyyWfl+3KjibQmAcYwmyzKF9J4DyKP/Q==}
     cpu: [x64]
     os: [darwin]
 
@@ -304,8 +314,18 @@ packages:
     cpu: [arm64]
     os: [linux]
 
+  '@cbor-extract/cbor-extract-linux-arm64@2.2.2':
+    resolution: {integrity: sha512-wfqgzqCAy/Vn8i6WVIh7qZd0DdBFaWBjPdB6ma+Wihcjv0gHqD/mw3ouVv7kbbUNrab6dKEx/w3xQZEdeXIlzg==}
+    cpu: [arm64]
+    os: [linux]
+
   '@cbor-extract/cbor-extract-linux-arm@2.2.0':
     resolution: {integrity: sha512-QeBcBXk964zOytiedMPQNZr7sg0TNavZeuUCD6ON4vEOU/25+pLhNN6EDIKJ9VLTKaZ7K7EaAriyYQ1NQ05s/Q==}
+    cpu: [arm]
+    os: [linux]
+
+  '@cbor-extract/cbor-extract-linux-arm@2.2.2':
+    resolution: {integrity: sha512-tNg0za41TpQfkhWjptD+0gSD2fggMiDCSacuIeELyb2xZhr7PrhPe5h66Jc67B/5dmpIhI2QOUtv4SBsricyYQ==}
     cpu: [arm]
     os: [linux]
 
@@ -314,8 +334,18 @@ packages:
     cpu: [x64]
     os: [linux]
 
+  '@cbor-extract/cbor-extract-linux-x64@2.2.2':
+    resolution: {integrity: sha512-rpiLnVEsqtPJ+mXTdx1rfz4RtUGYIUg2rUAZgd1KjiC1SehYUSkJN7Yh+aVfSjvCGtVP0/bfkQkXpPXKbmSUaA==}
+    cpu: [x64]
+    os: [linux]
+
   '@cbor-extract/cbor-extract-win32-x64@2.2.0':
     resolution: {integrity: sha512-l2M+Z8DO2vbvADOBNLbbh9y5ST1RY5sqkWOg/58GkUPBYou/cuNZ68SGQ644f1CvZ8kcOxyZtw06+dxWHIoN/w==}
+    cpu: [x64]
+    os: [win32]
+
+  '@cbor-extract/cbor-extract-win32-x64@2.2.2':
+    resolution: {integrity: sha512-dI+9P7cfWxkTQ+oE+7Aa6onEn92PHgfWXZivjNheCRmTBDBf2fx6RyTi0cmgpYLnD1KLZK9ZYrMxaPZ4oiXhGA==}
     cpu: [x64]
     os: [win32]
 
@@ -1447,8 +1477,8 @@ packages:
   '@platformatic/undici-cache-memory@0.8.4':
     resolution: {integrity: sha512-/JVfPhyUW0GQkmr5lGAGOgh0lpJbTcLG8VB2uNqgNgH1fhPPFAM0l4pLSyeDzpTj2r/GJPLqhzvCgangnSHfoQ==}
 
-  '@platformatic/world@0.7.0':
-    resolution: {integrity: sha512-px1kRhOS12dNOMQ+SQPZZSHoNLMbsTOeB/9Dup1d7xLiadMR3nCGsyWXnYlYdPVQ+PeZOmpMcfpvE0gyTswYYw==}
+  '@platformatic/world@0.7.1':
+    resolution: {integrity: sha512-XTmEPUcjN4DJP23Ofkqp8Hg/eP8fAPP+c2UQoHaYEpAD4Rsi2Xle5B5Dd4HjbFWbnuHgAkCGcw86LmJ0fxVVlQ==}
     engines: {node: '>=22.19.0'}
 
   '@protobufjs/aspromise@1.1.2':
@@ -3033,8 +3063,15 @@ packages:
     resolution: {integrity: sha512-Ig1zM66BjLfTXpNgKpvBePq271BPOvu8MR0Jl080yG7Jsl+wAZunfrwiwA+9ruzm/WEdIV5QF/bjDZTqyAIVHA==}
     hasBin: true
 
+  cbor-extract@2.2.2:
+    resolution: {integrity: sha512-hlSxxI9XO2yQfe9g6msd3g4xCfDqK5T5P0fRMLuaLHhxn4ViPrm+a+MUfhrvH2W962RGxcBwEGzLQyjbDG1gng==}
+    hasBin: true
+
   cbor-x@1.6.0:
     resolution: {integrity: sha512-0kareyRwHSkL6ws5VXHEf8uY1liitysCVJjlmhaLG+IXLqhSaOO+t63coaso7yjwEzWZzLy8fJo06gZDVQM9Qg==}
+
+  cbor-x@1.6.4:
+    resolution: {integrity: sha512-UGKHjp6RHC6QuZ2yy5LCKm7MojM4716DwoSaqwQpaH4DvZvbBTGcoDNTiG9Y2lByXZYFEs9WRkS5tLl96IrF1Q==}
 
   chalk@5.6.2:
     resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
@@ -5436,19 +5473,37 @@ snapshots:
   '@cbor-extract/cbor-extract-darwin-arm64@2.2.0':
     optional: true
 
+  '@cbor-extract/cbor-extract-darwin-arm64@2.2.2':
+    optional: true
+
   '@cbor-extract/cbor-extract-darwin-x64@2.2.0':
+    optional: true
+
+  '@cbor-extract/cbor-extract-darwin-x64@2.2.2':
     optional: true
 
   '@cbor-extract/cbor-extract-linux-arm64@2.2.0':
     optional: true
 
+  '@cbor-extract/cbor-extract-linux-arm64@2.2.2':
+    optional: true
+
   '@cbor-extract/cbor-extract-linux-arm@2.2.0':
+    optional: true
+
+  '@cbor-extract/cbor-extract-linux-arm@2.2.2':
     optional: true
 
   '@cbor-extract/cbor-extract-linux-x64@2.2.0':
     optional: true
 
+  '@cbor-extract/cbor-extract-linux-x64@2.2.2':
+    optional: true
+
   '@cbor-extract/cbor-extract-win32-x64@2.2.0':
+    optional: true
+
+  '@cbor-extract/cbor-extract-win32-x64@2.2.2':
     optional: true
 
   '@date-fns/tz@1.4.1': {}
@@ -6597,9 +6652,9 @@ snapshots:
 
   '@platformatic/undici-cache-memory@0.8.4': {}
 
-  '@platformatic/world@0.7.0':
+  '@platformatic/world@0.7.1':
     dependencies:
-      cbor-x: 1.6.0
+      cbor-x: 1.6.4
       undici: 7.22.0
 
   '@protobufjs/aspromise@1.1.2': {}
@@ -8479,9 +8534,25 @@ snapshots:
       '@cbor-extract/cbor-extract-win32-x64': 2.2.0
     optional: true
 
+  cbor-extract@2.2.2:
+    dependencies:
+      node-gyp-build-optional-packages: 5.1.1
+    optionalDependencies:
+      '@cbor-extract/cbor-extract-darwin-arm64': 2.2.2
+      '@cbor-extract/cbor-extract-darwin-x64': 2.2.2
+      '@cbor-extract/cbor-extract-linux-arm': 2.2.2
+      '@cbor-extract/cbor-extract-linux-arm64': 2.2.2
+      '@cbor-extract/cbor-extract-linux-x64': 2.2.2
+      '@cbor-extract/cbor-extract-win32-x64': 2.2.2
+    optional: true
+
   cbor-x@1.6.0:
     optionalDependencies:
       cbor-extract: 2.2.0
+
+  cbor-x@1.6.4:
+    optionalDependencies:
+      cbor-extract: 2.2.2
 
   chalk@5.6.2: {}
 
